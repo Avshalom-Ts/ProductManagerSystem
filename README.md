@@ -1,6 +1,6 @@
 # Product Manager System
 
-<a src="https://www.youtube.com/watch?v=68a-h_xbwXA">Tutorial Link</a>
+[https://www.youtube.com/watch?v=68a-h_xbwXA](Tutorial Link)
 
 ## Development Steps
 
