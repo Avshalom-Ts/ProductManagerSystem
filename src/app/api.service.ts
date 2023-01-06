@@ -25,4 +25,14 @@ export class ApiService {
   deleteProduct(id: number) {
     return this.http.delete(`${this.url}/${id}`);
   }
+
+  // Update Product
+  updateProduct(data: ProductData, id: number) {
+    return this.http.put<ProductData>(`${this.url}/${id}`, data);
+  }
+
+  // On Edit Product
+  getProductById(id: number) {
+    return this.http.get<ProductData>(`${this.url}/${id}`);
+  }
 }
