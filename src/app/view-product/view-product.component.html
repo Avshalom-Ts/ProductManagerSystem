@@ -27,7 +27,7 @@
         <td>{{product.productcategory}}</td>
         <td>{{product.productdescription}}</td>
         <td><i class="fa fa-edit"></i>&nbsp;
-          <i class="fa fa-trash"></i>
+          <i (click)="deleteProduct(product.id)" class="fa fa-trash"></i>
         </td>
       </tr>
     </tbody>

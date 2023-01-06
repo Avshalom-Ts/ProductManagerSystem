@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ProductData } from './add-product/product.model';
+import { ActivatedRouteSnapshot } from '@angular/router';
 
 @Injectable({
   providedIn: 'root',
@@ -18,5 +19,10 @@ export class ApiService {
   // Display Product
   getProduct() {
     return this.http.get<ProductData[]>(this.url);
+  }
+
+  // Delete Product
+  deleteProduct(id: number) {
+    return this.http.delete(`${this.url}/${id}`);
   }
 }

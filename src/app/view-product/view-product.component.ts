@@ -21,4 +21,14 @@ export class ViewProductComponent implements OnInit {
       this.products = res;
     });
   }
+
+  deleteProduct(id: number) {
+    if (confirm('Are you sure to delete this product?')) {
+      this.api.deleteProduct(id).subscribe((res) => {
+        console.log(res);
+        this.getProduct();
+      });
+    }
+    this.getProduct();
+  }
 }
