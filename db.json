@@ -1,9 +1,20 @@
 {
-  "posts": [
+  "product": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "productid": "test",
+      "productname": "test name",
+      "productprice": 2423,
+      "producturl": "sdgvdfv",
+      "productdescription": "afsagvdsfv",
+      "id": 1
+    },
+    {
+      "productid": "test",
+      "productname": "test",
+      "productprice": 123,
+      "producturl": "dsgvd",
+      "productdescription": "dfvbdb ",
+      "id": 2
     }
   ],
   "comments": [
