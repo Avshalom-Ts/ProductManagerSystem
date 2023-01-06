@@ -1,22 +1,5 @@
 {
-  "product": [
-    {
-      "productid": "Agha134",
-      "productname": "Laptop",
-      "productprice": 1950,
-      "producturl": "https://w.wallhaven.cc/full/57/wallhaven-57o9j5.png",
-      "productdescription": "The ThinkBook 16 Gen 4 laptop gives you more",
-      "id": 1
-    },
-    {
-      "productid": "Gp5477",
-      "productname": "Gun Photos",
-      "productprice": 5452,
-      "producturl": "https://w.wallhaven.cc/full/vq/wallhaven-vqqx5p.jpg",
-      "productdescription": "Photo of assebled Gun",
-      "id": 2
-    }
-  ],
+  "product": [],
   "comments": [
     {
       "id": 1,
