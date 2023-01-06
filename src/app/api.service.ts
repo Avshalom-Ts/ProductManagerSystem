@@ -14,4 +14,9 @@ export class ApiService {
   addProduct(data: ProductData) {
     return this.http.post(this.url, data);
   }
+
+  // Display Product
+  getProduct() {
+    return this.http.get<ProductData>(this.url);
+  }
 }

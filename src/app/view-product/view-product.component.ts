@@ -1,10 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
+import { ProductData } from '../add-product/product.model';
 
 @Component({
   selector: 'app-view-product',
   templateUrl: './view-product.component.html',
-  styleUrls: ['./view-product.component.scss']
+  styleUrls: ['./view-product.component.scss'],
 })
-export class ViewProductComponent {
+export class ViewProductComponent implements OnInit {
+  product: undefined | ProductData;
+  constructor(private api: ApiService) {}
 
+  ngOnInit(): void {
+    this.getProduct();
+  }
+
+  getProduct() {
+    this.api.getProduct().subscribe((res) => {
+      console.log(res);
+      this.product = res;
+    });
+  }
 }
