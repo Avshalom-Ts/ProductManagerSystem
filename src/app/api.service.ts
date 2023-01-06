@@ -17,6 +17,6 @@ export class ApiService {
 
   // Display Product
   getProduct() {
-    return this.http.get<ProductData>(this.url);
+    return this.http.get<ProductData[]>(this.url);
   }
 }

@@ -8,7 +8,7 @@ import { ProductData } from '../add-product/product.model';
   styleUrls: ['./view-product.component.scss'],
 })
 export class ViewProductComponent implements OnInit {
-  product: undefined | ProductData;
+  products: undefined | ProductData[] = [];
   constructor(private api: ApiService) {}
 
   ngOnInit(): void {
@@ -18,7 +18,7 @@ export class ViewProductComponent implements OnInit {
   getProduct() {
     this.api.getProduct().subscribe((res) => {
       console.log(res);
-      this.product = res;
+      this.products = res;
     });
   }
 }

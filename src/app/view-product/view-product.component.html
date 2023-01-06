@@ -19,13 +19,13 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>Test</td>
-        <td>Test</td>
-        <td>Test</td>
-        <td>Test</td>
-        <td>Test</td>
-        <td>Test</td>
+      <tr *ngFor="let product of products ">
+        <td>{{product.producturl}}</td>
+        <td>{{product.productid}}</td>
+        <td>{{product.productname}}</td>
+        <td>{{product.productprice}}</td>
+        <td>{{product.productcategory}}</td>
+        <td>{{product.productdescription}}</td>
         <td><i class="fa fa-edit"></i>&nbsp;
           <i class="fa fa-trash"></i>
         </td>
