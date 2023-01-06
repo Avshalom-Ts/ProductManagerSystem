@@ -21,13 +21,13 @@
     <tbody>
       <tr *ngFor="let product of products ">
         <td><img style="width: 156px; height:95px;" src="{{product.producturl}}"></td>
-        <td>{{product.productid}}</td>
+        <td>{{product.id ? product.id : 0}}</td>
         <td>{{product.productname}}</td>
         <td>{{product.productprice}}</td>
         <td>{{product.productcategory}}</td>
         <td>{{product.productdescription}}</td>
-        <td><i class="fa fa-edit"></i>&nbsp;
-          <i (click)="deleteProduct(product.id)" class="fa fa-trash"></i>
+        <td><i routerLink="/update-product/{{product.id}}" class="fa fa-edit"></i>&nbsp;
+          <i (click)="deleteProduct(product.id ? product.id :0)" class="fa fa-trash"></i>
         </td>
       </tr>
     </tbody>

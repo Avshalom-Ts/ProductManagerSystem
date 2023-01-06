@@ -7,8 +7,9 @@ import { AppComponent } from './app.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { ViewProductComponent } from './view-product/view-product.component';
 import { HttpClientModule } from '@angular/common/http';
+import { UpdateProductComponent } from './update-product/update-product.component';
 @NgModule({
-  declarations: [AppComponent, AddProductComponent, ViewProductComponent],
+  declarations: [AppComponent, AddProductComponent, ViewProductComponent, UpdateProductComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
